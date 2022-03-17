@@ -148,9 +148,10 @@ hr {
 
 .sobre-mi {
   margin: -5em;
-  margin-top: 6em;
+  margin-top: 4em;
   width: 65%;
   display: flex;
+  height: 30em;
   flex-direction: column;
   align-items: center;
 }
@@ -158,9 +159,10 @@ hr {
 .sobre-mi .title h2 {
   font-family: "DM Serif Display";
   font-weight: 400;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   font-size: 48px;
   color: #ffffff;
+  display: flex;
   text-shadow: 1px 1px 5px black;
 }
 
@@ -170,8 +172,8 @@ hr {
   background-size: contain;
   border-radius: 12px;
   padding: 19px;
-  margin: 17px;
-  width: 25%;
+  margin: 11px;
+  width: 20%;
 }
 
 .sobre-mi .cuadro1,
@@ -179,13 +181,18 @@ hr {
 p {
   color: white;
   font-size: 17px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-content: space-between;
+  flex-wrap: wrap;
 }
 .sobre-mi p {
   margin-top: 11px;
 }
 
 .parrafo-sobre {
-  width: 70%;
+  width: 65%;
   line-height: 35px;
   display: inline-block;
   margin: -16em -32em 0 auto;
@@ -193,4 +200,42 @@ p {
 
 .parrafo-sobre p {
   font-size: 20px;
+}
+
+.conocimientos {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-around;
+  align-items: center;
+  height: 30rem;
+  margin: 4em;
+  flex-wrap: nowrap;
+}
+
+.conocimientos .titulo-conocimientos {
+  color: #ffffff;
+  font-size: 38px;
+  font-weight: 400;
+  font-family: "DM Serif Display";
+  text-shadow: 2px 2px 4px black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.conocimientos .subtitulo {
+  color: #9a9db1;
+  margin-top: 1em;
+  font-size: 25px;
+  margin-bottom: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.conocimientos .cuadro-conocimientos {
+  background-color: #4a4e69;
+  display: flex;
+  height: 25em;
+  width: 40em;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
 }
