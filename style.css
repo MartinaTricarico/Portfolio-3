@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #22223b;
+}
+
+.nav__menu {
+  max-width: 100%;
+  font-family: "Assistant";
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  justify-content: flex-end;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.nav__list li {
+  list-style: none;
+}
+
+.nav__menu a {
+  font-size: 20px;
+  text-shadow: 2px 2px 2px black;
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-weight: lighter;
+  font-weight: 400;
+}
+
+.presentation {
+  display: flex;
+  margin-top: 80px;
+  color: white;
+  height: 500px;
+  background-image: url("assets/coding1.svg");
+  justify-content: center;
+  background-position: center;
+  flex-direction: row;
+}
+
+.presentation .imagen-mine {
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+  margin: 40px;
+}
+
+.presentation .imagen-mine img {
+  border-radius: 45px;
+  z-index: index;
+  box-shadow: 3px 3px 8px black;
+}
+
+.presentation .content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.presentation h3 {
+  font-family: "Assistant";
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 4px black;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.presentation h4 {
+  font-family: "Assistant";
+  letter-spacing: 3px;
+  color: #9a9db1;
+  font-size: 26px;
+  text-shadow: 2px 2px 4px black;
+  margin: 7px;
+}
+
+.presentation .buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.presentation .buttons i {
+  margin: 5px 5px;
+}
+
+.presentation .cv {
+  margin: 13px;
+  border-radius: 15px;
+  background-color: #9a8c98;
+  padding: 10px;
+}
+
+.presentation .buttons button {
+  display: flex;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  font-family: "Assistant";
+  letter-spacing: 1px;
+}
+
+.presentation .buttons a {
+  color: white;
+  text-decoration: none;
+}
+
+.presentation .button-git,
+.button-ld {
+  font-size: 45px;
+  margin: 10px;
+  background-color: #4a4e69;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+hr {
+  border: 1px solid #4a4e69;
+  margin-top: 30px;
+  height: 0;
+}
+
+.sobre-mi,
+.cuadro1,
+.cuadro2,
+.parrafo-sobre p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sobre-mi {
+  margin: -5em;
+  margin-top: 6em;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sobre-mi .title h2 {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  margin-bottom: 1em;
+  font-size: 48px;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px black;
+}
+
+.sobre-mi .cuadro1,
+.cuadro2 {
+  background-color: #4a4e69;
+  background-size: contain;
+  border-radius: 12px;
+  padding: 19px;
+  margin: 17px;
+  width: 25%;
+}
+
+.sobre-mi .cuadro1,
+.cuadro2 h4,
+p {
+  color: white;
+  font-size: 17px;
+}
+.sobre-mi p {
+  margin-top: 11px;
+}
+
+.parrafo-sobre {
+  width: 70%;
+  line-height: 35px;
+  display: inline-block;
+  margin: -16em -32em 0 auto;
+}
+
+.parrafo-sobre p {
+  font-size: 20px;
+}
