@@ -207,23 +207,26 @@ hr {
 }
 
 .sobre-mi {
-  margin: -5em;
-  margin-top: 4em;
-  width: 65%;
   display: flex;
-  height: 30em;
+  flex-wrap: wrap;
+  height: 28em;
+  margin-right: 29em;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  align-content: center;
 }
 
 .sobre-mi .title h2 {
   font-family: "DM Serif Display";
   font-weight: 400;
-  margin-bottom: 0.5em;
   font-size: 48px;
   color: #ffffff;
-  display: flex;
   text-shadow: 1px 1px 5px black;
+}
+
+.sobre-mi .cuadros {
+  display: flex;
 }
 
 .sobre-mi .cuadro1,
@@ -231,32 +234,42 @@ hr {
   background-color: #4a4e69;
   background-size: contain;
   border-radius: 12px;
-  padding: 19px;
-  margin: 11px;
-  width: 20%;
+  padding: 20px;
+  margin: 20px 5px 10px 4px;
+  width: 90%;
+}
+
+.sobre-mi .cuadros {
+  display: flex;
+  margin-right: 8em;
+  flex-direction: column;
 }
 
 .sobre-mi .cuadro1,
 .cuadro2 h4,
 p {
   color: white;
-  font-size: 17px;
+  font-size: 23px;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  align-content: space-between;
+  margin: 4px;
+  align-items: flex-start;
+  align-content: flex-start;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 .sobre-mi p {
-  margin-top: 11px;
+  font-size: 20px;
+  max-width: 35em;
 }
 
 .parrafo-sobre {
   width: 100%;
   max-width: 55em;
   line-height: 35px;
-  display: inline-block;
-  margin: -16em -32em 0 auto;
+  display: flex;
+  margin: -20em -37em 0 auto;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .parrafo-sobre p {
