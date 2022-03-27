@@ -65,6 +65,7 @@ body {
 }
 
 .nav__menu a {
+  transition: 0.4s;
   font-size: 20px;
   text-shadow: 2px 2px 2px black;
   color: white;
@@ -72,6 +73,10 @@ body {
   text-decoration: none;
   font-weight: lighter;
   font-weight: 400;
+}
+
+.nav__menu a:hover {
+  color: rgb(212, 179, 231);
 }
 
 .presentation {
@@ -135,6 +140,37 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+
+  -webkit-animation-name: fadeInRightBig;
+  animation-name: fadeInRightBig;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
 }
 
 .presentation h3 {
@@ -168,6 +204,7 @@ body {
 }
 
 .presentation .cv {
+  transition: 0.5s;
   margin: 13px;
   border-radius: 15px;
   background-color: #9a8c98;
@@ -194,6 +231,10 @@ body {
   background-color: #4a4e69;
   border-radius: 5px;
   color: #ffffff;
+}
+
+.presentation .cv:hover {
+  background-color: #5a4857;
 }
 
 hr {
@@ -438,15 +479,11 @@ p {
   align-items: center;
 }
 
-.proyectos .card-container .card button {
-  padding: 11px;
-  border-radius: 10px;
-  background-color: #22223b;
-  color: #ffffff;
-}
-
 .proyectos .card-container .card i {
-  font-size: 15px;
+  display: flex;
+  font-size: 18px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .proyectos .card-container .card a {
@@ -454,6 +491,11 @@ p {
   text-decoration: none;
   padding: 20px;
   font-size: 18px;
+}
+
+.proyectos .card-container .card a:hover {
+  color: #22223b;
+  transition: 0.3s;
 }
 
 .contacto {
@@ -606,16 +648,25 @@ footer .categorias-footer a {
   margin: 1em;
   margin-top: 30px;
   color: #000;
+  transition: 0.4s;
   font-size: 18px;
+}
+
+footer .categorias-footer a:hover {
+  color: rgb(151, 128, 128);
 }
 
 footer .buttons-footer a {
   background-color: #c9ada7;
   font-size: 45px;
+  transition: 0.4s;
   margin: 23px;
-
   border-radius: 8px;
   color: #ffffff;
+}
+
+footer .buttons-footer a:hover {
+  color: #22223b;
 }
 
 footer .buttons-footer i {
@@ -624,6 +675,7 @@ footer .buttons-footer i {
 
 footer .buttons-footer {
   display: flex;
+  transition: 0.4s;
 }
 
 footer p {
@@ -881,7 +933,7 @@ footer p {
   }
 
   .proyectos .card-container .card img {
-    border-radius: 15px;
+    border-radius: 16px;
   }
 
   .proyectos .card-container .card h4 {
@@ -904,15 +956,8 @@ footer p {
     align-items: center;
   }
 
-  .proyectos .card-container .card button {
-    padding: 11px;
-    border-radius: 10px;
-    background-color: #22223b;
-    color: #ffffff;
-  }
-
   .proyectos .card-container .card i {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .proyectos .card-container .card a {
@@ -1103,7 +1148,7 @@ footer p {
 
   .proyectos .card-container .card {
     background-color: #4a4e69;
-    width: 220px;
+    width: 188px;
     border-radius: 25px;
     height: 18em;
     display: flex;
@@ -1122,6 +1167,15 @@ footer p {
     text-shadow: 1px 1px 6px black;
   }
 
+  .proyectos .card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2px;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
   .proyectos .card-container .card .container {
     color: #ffffff;
     display: flex;
@@ -1135,13 +1189,6 @@ footer p {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-
-  .proyectos .card-container .card button {
-    padding: 11px;
-    border-radius: 10px;
-    background-color: #22223b;
-    color: #ffffff;
   }
 
   .proyectos .card-container .card i {
@@ -1395,13 +1442,6 @@ footer p {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-
-  .proyectos .card-container .card button {
-    padding: 11px;
-    border-radius: 10px;
-    background-color: #22223b;
-    color: #ffffff;
   }
 
   .proyectos .card-container .card i {
