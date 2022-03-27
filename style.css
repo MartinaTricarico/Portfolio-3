@@ -6,6 +6,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -78,6 +80,7 @@ body {
   color: white;
   height: 500px;
   background-image: url("assets/coding1.svg");
+  background-repeat: repeat;
   justify-content: center;
   background-position: center;
   flex-direction: row;
@@ -195,8 +198,9 @@ body {
 
 hr {
   border: 1px solid #4a4e69;
-  margin-top: 30px;
+  margin-top: 60px;
   height: 0;
+  width: 1000%;
 }
 
 .sobre-mi,
@@ -257,6 +261,7 @@ p {
   flex-wrap: wrap;
   flex-direction: column;
 }
+
 .sobre-mi p {
   font-size: 20px;
   max-width: 35em;
@@ -624,4 +629,894 @@ footer .buttons-footer {
 footer p {
   margin-top: 2em;
   color: #000;
+}
+
+@media screen and (max-width: 1399px) {
+  .sobre-mi p {
+    font-size: 19px;
+    max-width: 35em;
+  }
+
+  .parrafo-sobre {
+    width: 95%;
+    max-width: 55em;
+    line-height: 35px;
+    display: flex;
+    margin: -20em -38em 0 auto;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .parrafo-sobre p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .presentation {
+    display: flex;
+    margin-top: 80px;
+    color: white;
+    height: 500px;
+    background-position: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .presentation .imagen-mine {
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    margin: 36px;
+  }
+
+  .presentation .imagen-mine img {
+    border-radius: 45px;
+    z-index: index;
+    box-shadow: 3px 3px 8px black;
+  }
+
+  .presentation .content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .presentation h3 {
+    font-family: "Assistant";
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px black;
+    margin: 5px;
+    font-weight: bold;
+  }
+
+  .presentation h4 {
+    font-family: "Assistant";
+    letter-spacing: 3px;
+    color: #9a9db1;
+    font-size: 21px;
+    text-shadow: 2px 2px 4px black;
+    margin: 7px;
+  }
+
+  .sobre-mi {
+    display: flex;
+    flex-flow: column wrap;
+    height: 28em;
+    margin-right: 24em;
+    align-items: flex-start;
+    place-content: center space-evenly;
+    align-content: center;
+  }
+
+  .sobre-mi .cuadros {
+    display: flex;
+    margin-right: 9em;
+    flex-direction: column;
+  }
+  .sobre-mi p {
+    font-size: 19px;
+    max-width: 35em;
+  }
+
+  .sobre-mi .cuadros {
+    display: flex;
+    margin-right: 1em;
+    flex-direction: column;
+  }
+
+  .parrafo-sobre {
+    width: 84%;
+    line-height: 35px;
+    display: flex;
+    margin: 2em -32em 0 auto;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .parrafo-sobre p {
+    font-size: 19px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .presentation {
+    display: flex;
+    margin-top: 80px;
+    color: white;
+    height: 500px;
+    background-position: center;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .presentation .imagen-mine {
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    margin: 71px;
+  }
+
+  .presentation .imagen-mine img {
+    border-radius: 45px;
+    z-index: index;
+    box-shadow: 3px 3px 8px black;
+  }
+
+  .presentation .content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -3em;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .presentation h3 {
+    font-family: "Assistant";
+    font-weight: 400;
+    font-size: 35px;
+    width: 90%;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px black;
+    margin: 5px;
+    font-weight: bold;
+  }
+
+  .presentation h4 {
+    font-family: "Assistant";
+    letter-spacing: 3px;
+    color: #9a9db1;
+    font-size: 21px;
+    text-shadow: 2px 2px 4px black;
+    margin: 7px;
+  }
+
+  .sobre-mi {
+    display: flex;
+    flex-wrap: wrap;
+    height: 28em;
+    margin-left: 7em;
+    margin-right: 8em;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .sobre-mi .title {
+    margin: 12px;
+  }
+
+  .sobre-mi .title h2 {
+    font-family: "DM Serif Display";
+    font-weight: 400;
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px black;
+  }
+
+  .sobre-mi .cuadro1,
+  .cuadro2 {
+    background-color: #4a4e69;
+    background-size: contain;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 20px 5px 10px 4px;
+    width: 85%;
+  }
+
+  .sobre-mi .cuadro1,
+  .cuadro2 h4,
+  p {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    margin: 4px;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .sobre-mi .cuadros {
+    display: flex;
+    margin-right: 0em;
+    flex-direction: column;
+  }
+  .sobre-mi p {
+    font-size: 17px;
+    max-width: 35em;
+  }
+
+  .parrafo-sobre {
+    width: 75%;
+    line-height: 35px;
+    display: flex;
+    margin: 2em -25em 0 auto;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .parrafo-sobre p {
+    font-size: 17px;
+  }
+
+  .proyectos .card-container .card {
+    background-color: #4a4e69;
+    width: 220px;
+    border-radius: 25px;
+    height: 18em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .proyectos .card-container .card img {
+    border-radius: 15px;
+  }
+
+  .proyectos .card-container .card h4 {
+    font-size: 20px;
+    text-shadow: 1px 1px 6px black;
+  }
+
+  .proyectos .card-container .card .container {
+    color: #ffffff;
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .proyectos .card-container .card .seccion {
+    padding: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .proyectos .card-container .card button {
+    padding: 11px;
+    border-radius: 10px;
+    background-color: #22223b;
+    color: #ffffff;
+  }
+
+  .proyectos .card-container .card i {
+    font-size: 14px;
+  }
+
+  .proyectos .card-container .card a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu a {
+    font-size: 16px;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-weight: lighter;
+    font-weight: 400;
+  }
+
+  .presentation {
+    display: flex;
+    margin-top: 80px;
+    background-image: url("assets/coding1.svg");
+    background-size: cover;
+    color: white;
+    height: 500px;
+    background-position: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .presentation .imagen-mine {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .presentation .imagen-mine img {
+    border-radius: 45px;
+    width: 225px;
+    z-index: index;
+    box-shadow: 3px 3px 8px black;
+  }
+
+  .presentation .content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .presentation h3 {
+    font-family: "Assistant";
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px black;
+    margin: 5px;
+    font-weight: bold;
+  }
+
+  .presentation h4 {
+    font-family: "Assistant";
+    letter-spacing: 3px;
+    color: #9a9db1;
+    font-size: 16px;
+    max-width: 65%;
+    text-shadow: 2px 2px 4px black;
+    margin: 7px;
+  }
+
+  .presentation .buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 26px;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 70%;
+    justify-content: flex-start;
+  }
+
+  .presentation .buttons i {
+    margin: 5px 5px;
+  }
+
+  .presentation .cv {
+    margin: 13px;
+    border-radius: 15px;
+    background-color: #9a8c98;
+    padding: 10px;
+  }
+
+  .presentation .buttons button {
+    display: flex;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    font-family: "Assistant";
+    letter-spacing: 1px;
+  }
+
+  .presentation .buttons a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .presentation .button-git,
+  .button-ld {
+    font-size: 36px;
+    margin: 9px;
+    background-color: #4a4e69;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+
+  .sobre-mi {
+    display: flex;
+    height: 28em;
+    margin-left: 0em;
+    margin-right: 0em;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .sobre-mi .title {
+    margin: 23px;
+  }
+
+  .sobre-mi .title h2 {
+    font-family: "DM Serif Display";
+    font-weight: 400;
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px black;
+  }
+
+  .sobre-mi .cuadro1,
+  .cuadro2 {
+    background-color: #4a4e69;
+    background-size: contain;
+    border-radius: 12px;
+    padding: 6px;
+    margin: 12px 5px 10px 4px;
+    width: 67%;
+  }
+
+  .sobre-mi .cuadro1,
+  .cuadro2 h4,
+  p {
+    color: white;
+    font-size: 15px;
+    display: flex;
+    margin: 4px;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .sobre-mi .cuadros {
+    display: flex;
+    margin-right: 0em;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .sobre-mi p {
+    font-size: 12px;
+    max-width: 35em;
+  }
+
+  .parrafo-sobre {
+    line-height: 25px;
+    display: flex;
+    margin: 0em 5em -1em auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .parrafo-sobre p {
+    font-size: 17px;
+    width: 130%;
+  }
+
+  .proyectos .card-container .card {
+    background-color: #4a4e69;
+    width: 220px;
+    border-radius: 25px;
+    height: 18em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .proyectos .card-container .card img {
+    border-radius: 15px;
+  }
+
+  .proyectos .card-container .card h4 {
+    font-size: 20px;
+    text-shadow: 1px 1px 6px black;
+  }
+
+  .proyectos .card-container .card .container {
+    color: #ffffff;
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .proyectos .card-container .card .seccion {
+    padding: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .proyectos .card-container .card button {
+    padding: 11px;
+    border-radius: 10px;
+    background-color: #22223b;
+    color: #ffffff;
+  }
+
+  .proyectos .card-container .card i {
+    font-size: 14px;
+  }
+
+  .proyectos .card-container .card a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .nav__menu a {
+    font-size: 12px;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: lighter;
+    font-weight: 400;
+  }
+
+  .presentation {
+    display: flex;
+    margin-top: 35px;
+    background-size: cover;
+    color: white;
+    height: 27em;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .presentation .imagen-mine {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .presentation .imagen-mine img {
+    border-radius: 45px;
+    width: 195px;
+    z-index: index;
+    box-shadow: 3px 3px 8px black;
+  }
+
+  .presentation .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .presentation h3 {
+    font-family: "Assistant";
+    font-weight: 400;
+    font-size: 20px;
+    width: 100%;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px black;
+    margin: 5px;
+    font-weight: bold;
+  }
+
+  .presentation h4 {
+    font-family: "Assistant";
+    letter-spacing: 3px;
+    color: #9a9db1;
+    font-size: 14px;
+    max-width: 100%;
+    text-shadow: 2px 2px 4px black;
+    margin: 7px;
+  }
+
+  .presentation .buttons {
+    display: flex;
+    margin-top: 12px;
+    align-items: center;
+    max-width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .presentation .buttons i {
+    margin: 5px 5px;
+  }
+
+  .presentation .cv {
+    margin: 13px;
+    border-radius: 15px;
+    background-color: #9a8c98;
+    padding: 10px;
+  }
+
+  .presentation .buttons button {
+    display: flex;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    font-family: "Assistant";
+    letter-spacing: 1px;
+  }
+
+  .presentation .buttons a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .presentation .button-git,
+  .button-ld {
+    font-size: 36px;
+    margin: 9px;
+    background-color: #4a4e69;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+
+  .sobre-mi {
+    display: flex;
+    height: 35em;
+    margin-left: 0em;
+    margin-right: 0em;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .sobre-mi .title {
+    margin: 23px;
+  }
+
+  .sobre-mi .title h2 {
+    font-family: "DM Serif Display";
+    font-weight: 400;
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px black;
+  }
+
+  .sobre-mi .cuadro1,
+  .cuadro2 {
+    background-color: #4a4e69;
+    background-size: contain;
+    border-radius: 12px;
+    padding: 6px;
+    margin: 12px 5px 10px 4px;
+    width: 67%;
+  }
+
+  .sobre-mi .cuadro1,
+  .cuadro2 h4,
+  p {
+    color: white;
+    font-size: 15px;
+    display: flex;
+    margin: 4px;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .sobre-mi .cuadros {
+    display: flex;
+    margin-right: 0em;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .sobre-mi p {
+    font-size: 12px;
+    max-width: 35em;
+  }
+
+  header {
+    height: 34em;
+  }
+
+  .proyectos {
+    height: 63em;
+  }
+
+  .parrafo-sobre {
+    line-height: 25px;
+    display: flex;
+    width: 60%;
+    margin: 0em 7em -1em auto;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .parrafo-sobre p {
+    font-size: 14px;
+    width: 130%;
+  }
+
+  .proyectos .card-container .card {
+    background-color: #4a4e69;
+    width: 220px;
+    border-radius: 25px;
+    height: 18em;
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .proyectos .proyecto-title h2 {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 400;
+    margin: 13px;
+    font-family: "DM Serif Display";
+    text-shadow: 2px 2px 4px black;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .proyectos .card-container .card img {
+    border-radius: 15px;
+  }
+
+  .proyectos .card-container .card h4 {
+    font-size: 20px;
+    text-shadow: 1px 1px 6px black;
+  }
+
+  .proyectos .card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+  }
+
+  .proyectos .card-container .card .container {
+    color: #ffffff;
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .proyectos .card-container .card .seccion {
+    padding: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .proyectos .card-container .card button {
+    padding: 11px;
+    border-radius: 10px;
+    background-color: #22223b;
+    color: #ffffff;
+  }
+
+  .proyectos .card-container .card i {
+    font-size: 14px;
+  }
+
+  .proyectos .card-container .card a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .conocimientos .titulo-conocimientos h2 {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 400;
+    font-family: "DM Serif Display";
+    text-shadow: 2px 2px 4px black;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .conocimientos .subtitulo {
+    color: #9a9db1;
+    margin-top: 0.5em;
+    font-size: 17px;
+    margin-bottom: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .conocimientos .cuadro-conocimientos .lista {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60%;
+    margin: 30px;
+    height: 23em;
+    color: #ffffff;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+  }
+
+  .conocimientos .cuadro-conocimientos {
+    background-color: #4a4e69;
+    display: flex;
+    height: 27em;
+    width: 21em;
+    border-radius: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .conocimientos .cuadro-conocimientos .lista {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 25px;
+    height: 25em;
+    color: #ffffff;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+  }
+
+  .conocimientos .cuadro-conocimientos .lista i {
+    font-size: 35px;
+  }
+
+  .conocimientos .cuadro-conocimientos .lista label {
+    color: #9a9db1;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 14px;
+    font-size: 13px;
+  }
+
+  .contacto h2 {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 400;
+    font-family: "DM Serif Display";
+    text-shadow: 2px 2px 4px black;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contacto .container-contact {
+    display: flex;
+    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacto .contacto-form button {
+    background-color: #9a8c98;
+    font-family: Arial;
+    padding: 12px;
+    width: 125px;
+    font-size: 10px;
+    border-radius: 12px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  footer {
+    background-color: #f2e9e4;
+    height: 32em;
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-family: "Assistant";
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+  }
 }
