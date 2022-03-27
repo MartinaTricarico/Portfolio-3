@@ -241,7 +241,7 @@ hr {
   border: 1px solid #4a4e69;
   margin-top: 60px;
   height: 0;
-  width: 1000%;
+  width: 100%;
 }
 
 .sobre-mi,
@@ -374,6 +374,12 @@ p {
 
 .conocimientos .cuadro-conocimientos .lista i {
   font-size: 50px;
+  text-shadow: 1px 1px 4px black;
+  transition: 0.2s ease-out;
+}
+
+.conocimientos .cuadro-conocimientos .lista i:hover {
+  color: #22223b;
 }
 
 .conocimientos .cuadro-conocimientos .lista .card {
